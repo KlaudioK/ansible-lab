@@ -1,0 +1,19 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: Install nginx 
+    apt:
+      name:
+      - nginx
+      state: latest
+      update_cache: yes
+
+  - name: Enable and start nginx
+      service:
+        name: nginx 
+        state: started
+        enabled: yes
+
+
+    
