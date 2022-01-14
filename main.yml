@@ -1,0 +1,10 @@
+---
+
+  -name: install default packages
+    import_playbook: default-install.yml
+
+  -name: install and configure nginx servers
+    import_playbook: nginx.yml
+
+  -name: install and configure haproxy
+    import_playbook: haproxy.yml
