@@ -1,0 +1,14 @@
+## Ansible Hosts
+
+[managementservers]
+
+Interview-Test-1 ansible_host=68.68.31.71
+
+[webservers]
+
+Interview-Test-2 ansible_host=68.68.31.72
+Interview-Test-3 ansible_host=68.68.31.73
+
+[LAB:children]
+managementservers
+webservers
